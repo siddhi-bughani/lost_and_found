@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Editorial university palette */
+  --color-canvas: #F8F6F1;
+  --color-canvas-2: #F1EEE6;
+  --color-ink: #292D32;
+  --color-ink-soft: #4A4F57;
+  --color-ink-muted: #6B7079;
+  --color-line: #E3DFD4;
+  --color-line-strong: #CFC8B8;
+  --color-burgundy: #8B414B;
+  --color-burgundy-deep: #6E2F37;
+  --color-slate: #435566;
+  --color-slate-soft: #6B8197;
+  --color-cream: #FBFAF6;
+  --color-found: #3F6B4E;
+  --color-lost: #8B414B;
+
+  --font-serif: 'Fraunces', 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+
+  --radius-sm: 4px;
+  --radius: 8px;
+
+  --maxw: 1240px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: var(--color-canvas);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-2);
+}
+
+h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 600; }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); }
+h3 { font-size: 1.3rem; }
+
+p { margin: 0 0 var(--space-2); color: var(--color-ink-soft); }
+
+a {
+  color: var(--color-burgundy);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover { color: var(--color-burgundy-deep); text-decoration: underline; }
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+img { max-width: 100%; display: block; }
+
+:root { color-scheme: light; }
